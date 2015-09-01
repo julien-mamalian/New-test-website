@@ -1,0 +1,57 @@
+body,html{
+  height:100%;
+  background-color: red;
+}
+
+.page_3 {
+  height: 100%;
+  background-image: url('../../images/nav-grey.png');
+  background-size: cover;
+  background-position: center;
+
+  // .slides img {
+  //   width: 100%;
+  //   height: 100%;
+  //   object-fit: cover;
+  // }
+
+  li {
+    list-style-type:none;
+  }
+
+  .flex-control-nav {
+    display: none;
+  }
+  .fa-angle-right {
+    color: white;
+  }
+  //  MISE EN PLACE DE LA GALERIE
+  .flex-viewport {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+  }
+  .plat {
+    width:100%;
+    object-fit: cover;
+  }
+
+  .flex-control-nav {
+    top: 0px;
+    position: absolute;
+  }
+
+  .slides {
+    height: 100%;
+    padding-left: 0px;
+  }
+  .flexslider {
+    height: 100%;
+    position: relative;
+  }
+  .flex-direction-nav {
+    position: absolute;
+    top: 0px;
+    right: 0px;
+  }
+}
