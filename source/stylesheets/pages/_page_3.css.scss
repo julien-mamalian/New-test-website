@@ -33,6 +33,7 @@ body,html{
   }
   .plat {
     width:100%;
+    height: 100%;
     object-fit: cover;
   }
 
@@ -51,7 +52,41 @@ body,html{
   }
   .flex-direction-nav {
     position: absolute;
-    top: 0px;
-    right: 0px;
+    bottom: 0px;
+    left: 0px;
+  }
+
+  .restaurant_details {
+    background-color: rgba(255,255,255,0.95);
+    position: absolute;
+    z-index: 10000;
+    bottom: 0;
+  }
+
+  h3 {
+    text-transform: uppercase;
+  }
+
+  @media screen and (max-width: 768px) {
+    .restaurant_details {
+
+    }
+  }
+  @media screen and (min-width: 769px) and (max-width: 999px) {
+    .restaurant_details {
+
+    }
+  }
+  @media screen and (min-width: 1000px) and (max-width: 1349px) {
+    .restaurant_details {
+
+    }
+  }
+  @media screen and (min-width: 1350px) {
+    .restaurant_details {
+      width: 36%;
+      height: 60%;
+      right: 100px;
+    }
   }
 }
