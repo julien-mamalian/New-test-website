@@ -4,9 +4,7 @@ body,html{
 }
 
 .page_2 {
-  background-image: url('../../images/restaurant.jpg');
-  background-size: cover;
-  background-position: center;
+  background-color: white;
   height: 100%;
 
   strong {
@@ -25,39 +23,95 @@ body,html{
       vertical-align: middle;
     }
   }
+
+  // Partie sur le CHEF
+
+  .chief_1 {
+    height: 92%;
+  }
+
   .chief_picture {
     width: 50%;
-    height: 92%;
+    height: 100%;
     background-image: url('../../images/chief.jpg');
     background-size: cover;
     background-position: center;
     float: left;
   }
+  .chief_details_1 {
+    width: 50%;
+    height: 100%;
+    background-color: white;
+    float: right;
+  }
+
+
+  // Partie sur le SOUS CHEF
+  .chief_2  {
+    height: 92%;
+  }
 
   .chief_picture2 {
     width: 50%;
-    height: 92%;
+    height: 100%;
     background-image: url('../../images/second.png');
     background-size: cover;
-    background-position: center;
+    background-position: top;
     float: left;
   }
 
-  .chief_details_1 {
-    width: 50%;
-    height: 92%;
-    background-color: white;
-    float: right;
-  }
   .chief_details_2 {
     width: 50%;
-    height: 92%;
+    height: 100%;
     background-color: white;
     float: right;
   }
+
   .cleared {
     clear: both;
   }
+
+  // PARTIE MOBILE
+    // CHEF MOBILE
+
+  .chief_mobile_1 {
+    height: 92%;
+
+    .chief_picture {
+      width: 100%;
+      height: 35%;
+      background-image: url('../../images/chief.jpg');
+      background-size: cover;
+      background-position: center;
+    }
+    .chief_details_1 {
+      width: 100%;
+      min-height: 65%;
+      background-color: white;
+    }
+  }
+
+  .chief_mobile_2 {
+    height: 92%;
+    // SOUS CHEF MOBILE
+    .chief_picture2 {
+      width: 100%;
+      height: 35%;
+      background-image: url('../../images/second.png');
+      background-size: cover;
+      background-position: top;
+    }
+
+    .chief_details_2 {
+      width: 100%;
+      min-height: 65%;
+      background-color: white;
+    }
+  }
+
+
+  // PARTIE PUCES ET TITRES
+
   ul {
     margin-top: 0px;
     margin-bottom: 0px;
@@ -66,7 +120,15 @@ body,html{
     display: inline-block;
     margin-top: 0px;
     margin-bottom: 0px;
+    cursor: pointer;
   }
+
+  .active_li {
+    border-bottom: 1px solid white;
+    padding-bottom: 5px;
+  }
+
+
 
   h4 {
     margin-top: 0px;
@@ -85,20 +147,40 @@ body,html{
 
 
   @media screen and (max-width: 768px) {
-
+    li {
+      margin-left: 10px;
+      margin-right: 10px;
+    }
+    .chief_1, .chief_2 {
+      display: none;
+    }
   }
-  @media screen and (min-width: 768px) and (max-width: 999px) {
-
+  @media screen and (min-width: 769px) and (max-width: 999px) {
+    li {
+      margin-left: 10px;
+      margin-right: 10px;
+    }
+    .chief_mobile_1, .chief_mobile_2 {
+      display: none;
+    }
   }
   @media screen and (min-width: 1000px) and (max-width: 1349px) {
-
+    li {
+      margin-left: 15px;
+      margin-right: 15px;
+    }
+    .chief_mobile_1, .chief_mobile_2 {
+      display: none;
+    }
   }
   @media screen and (min-width: 1350px) {
-    h4 {
-      padding-left: 15px;
-      padding-right: 15px;
+    li {
+      margin-left: 15px;
+      margin-right: 15px;
     }
-
+    .chief_mobile_1, .chief_mobile_2 {
+      display: none;
+    }
   }
 }
 
