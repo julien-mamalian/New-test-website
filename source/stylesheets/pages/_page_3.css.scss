@@ -32,8 +32,6 @@ body,html{
     object-fit: cover;
   }
   .plat {
-    width:100%;
-    height: 100%;
     object-fit: cover;
   }
 
@@ -69,24 +67,45 @@ body,html{
 
   @media screen and (max-width: 768px) {
     .restaurant_details {
+      width: 100%;
+      min-height: 30%;
 
+    }
+    .plat {
+      top: 0px;
+      width: 100%;
+      height: 70%;
+      min-height: 250px;
+      object-fit: cover;
     }
   }
   @media screen and (min-width: 769px) and (max-width: 999px) {
     .restaurant_details {
 
     }
+    .plat {
+      width:100%;
+      height: 100%;
+    }
   }
   @media screen and (min-width: 1000px) and (max-width: 1349px) {
     .restaurant_details {
 
     }
+    .plat {
+      width:100%;
+      height: 100%;
+    }
   }
   @media screen and (min-width: 1350px) {
     .restaurant_details {
       width: 36%;
-      height: 60%;
+      min-height: 60%;
       right: 100px;
+    }
+    .plat {
+      width:100%;
+      height: 100%;
     }
   }
 }
