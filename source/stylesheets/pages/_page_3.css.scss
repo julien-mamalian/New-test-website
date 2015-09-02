@@ -51,14 +51,14 @@ body,html{
   }
   .flex-direction-nav {
     position: absolute;
-    bottom: 0px;
+    top: 0px;
     left: 0px;
   }
 
   .restaurant_details {
     background-color: rgba(255,255,255,0.95);
-    position: absolute;
     z-index: 10000;
+    position: absolute;
     bottom: 0;
   }
 
