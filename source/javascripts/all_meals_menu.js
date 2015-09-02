@@ -7,7 +7,7 @@ $(document).ready(function(){
     $('ul').find('active_meal').removeClass('active_meal');
     $('.all_meals').find('.active_section').fadeOut(0).removeClass('active_section');
 
-    $('.one_4').addClass('active_meal');
+    $('.one_4').addClass('.active_meal');
     $('.appetizer_meals').fadeIn(1200).addClass('active_section');
   });
 
