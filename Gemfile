@@ -3,6 +3,8 @@
 source 'https://rubygems.org'
 
 gem "middleman", "~> 3.3.10"
+gem 'rack-contrib'
+gem 'puma'
 
 # Live-reloading plugin
 gem "middleman-livereload", "~> 3.1.0"
