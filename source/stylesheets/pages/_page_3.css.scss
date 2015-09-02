@@ -59,7 +59,7 @@ body,html{
     background-color: rgba(255,255,255,0.95);
     z-index: 10000;
     position: absolute;
-    bottom: 0;
+
   }
 
   h3 {
@@ -69,10 +69,10 @@ body,html{
   @media screen and (max-device-width: 768px) and (orientation: portrait) {
     .restaurant_details {
       z-index: 10000;
-      position: relative;
+      position: absolute;
       min-height: 30%;
       background-color: rgb(255, 255, 255);
-      top: 0px;
+      bottom: 0px;
       p {
         padding-bottom: 10px;
       }
@@ -101,10 +101,10 @@ body,html{
   @media screen and (max-width: 768px) {
     .restaurant_details {
       z-index: 10000;
-      position: relative;
+      position: absolute;
       min-height: 30%;
       background-color: rgb(255, 255, 255);
-      top: 0px;
+      bottom: 0px;
     }
     .plat {
       top: 0px;
@@ -129,7 +129,7 @@ body,html{
   }
   @media screen and (min-width: 769px) and (max-width: 999px) {
     .restaurant_details {
-
+      bottom: 0px;
     }
     .plat {
       width:100%;
@@ -138,7 +138,7 @@ body,html{
   }
   @media screen and (min-width: 1000px) and (max-width: 1349px) {
     .restaurant_details {
-
+      bottom: 0px;
     }
     .plat {
       width:100%;
@@ -150,6 +150,7 @@ body,html{
       width: 36%;
       min-height: 60%;
       right: 100px;
+      bottom: 0px;
     }
     .plat {
       width:100%;
