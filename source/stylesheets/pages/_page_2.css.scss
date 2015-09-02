@@ -154,6 +154,15 @@ body,html{
       display: none;
     }
   }
+  @media screen and (max-width: 768px) {
+    li {
+      margin-left: 10px;
+      margin-right: 10px;
+    }
+    .chief_1, .chief_2 {
+      display: none;
+    }
+  }
   @media screen and (min-width: 769px) and (max-width: 999px) {
     li {
       margin-left: 10px;
