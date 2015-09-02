@@ -1,0 +1,161 @@
+body,html{
+  height:100%;
+  background-color: #373C47;
+}
+
+.page_4 {
+  height: 100%;
+  text-align: center;
+  position: relative;
+  background-image: url('../../images/background-menu.png');
+  background-size: cover;
+  .menu_zone {
+    background-color: rgba(255,255,255,0.93);
+    left: 0;
+    right: 0;
+    margin: auto;
+    position: absolute;
+  }
+
+  .premier_pro_italic  {
+    font-style: italic;
+  }
+
+  .active_meal {
+    border-bottom: 1px solid grey;
+    padding-bottom: 5px;
+  }
+  h3 {
+    margin-top: 0px;
+  }
+  li {
+    display: inline;
+    list-style-type:none;
+
+  }
+
+
+  h4 {
+    display: inline;
+    cursor: pointer;
+  }
+
+
+  @media screen and (max-device-width: 768px) and (orientation: portrait) {
+    .menu_zone {
+      width: 100%;
+      min-height: 100%;
+
+    }
+    li {
+      margin-left: 20px;
+      margin-right: 20px;
+    }
+    .all_meals {
+      p {
+        font-size: 12px;
+        display: inline;
+        text-transform: uppercase;
+      }
+      h4 {
+        font-size: 20px;
+      }
+    }
+    .menu_zone {
+      top: 0;
+    }
+  }
+  @media screen and (max-width: 768px) {
+    .menu_zone {
+      width: 100%;
+      min-height: 100%;
+
+    }
+    li {
+      margin-left: 20px;
+      margin-right: 20px;
+    }
+    .all_meals {
+      p {
+        font-size: 12px;
+        display: inline;
+        text-transform: uppercase;
+      }
+      h4 {
+        font-size: 20px;
+      }
+    }
+  }
+  @media screen and (min-width: 769px) and (max-width: 999px) {
+    .menu_zone {
+      width: 100%;
+      min-height: 100%;
+
+    }
+    li {
+      margin-left: 20px;
+      margin-right: 20px;
+    }
+    .all_meals {
+      p {
+        font-size: 12px;
+        display: inline;
+        text-transform: uppercase;
+      }
+      h4 {
+        font-size: 20px;
+      }
+    }
+  }
+  @media screen and (min-width: 1000px) and (max-width: 1349px) {
+    .menu_zone {
+      width: 90%;
+
+    }
+    li {
+      margin-left: 20px;
+      margin-right: 20px;
+    }
+    .all_meals {
+      p {
+        font-size: 14px;
+        display: inline;
+        text-transform: uppercase;
+      }
+      h4 {
+        font-size: 22px;
+      }
+    }
+  }
+  @media screen and (min-width: 1350px) {
+    .menu_zone {
+      width: 80%;
+
+    }
+    li {
+      margin-left: 20px;
+      margin-right: 20px;
+    }
+    .all_meals {
+      p {
+        font-size: 14px;
+        display: inline;
+        text-transform: uppercase;
+      }
+      h4 {
+        font-size: 22px;
+      }
+    }
+  }
+
+  @media screen and (min-height: 811px) {
+    .menu_zone {
+      bottom: 0;
+    }
+  }
+  @media screen and (max-height: 810px) {
+    .menu_zone {
+      top: 0;
+    }
+  }
+}
