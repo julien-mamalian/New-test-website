@@ -9,6 +9,7 @@ $(document).ready(function(){
   var calculus_1 = bar + picture + description - windows_height;
   $('.page_3').css({'margin-top': Math.max(0, calculus_1 ) });
 
+
   // // Taille des parties du menu 2
   // var windows_height_2 = $('.page_3').height();
   // var picture_meal = $('.page_3 > .flexslider').height();

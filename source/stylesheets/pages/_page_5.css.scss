@@ -1,0 +1,76 @@
+
+
+
+body,html{
+  height:100%;
+  background-color: #373C47;
+}
+
+.page_5 {
+  height: 100%;
+  background-image: url('../../images/grey_background.png');
+  background-size: cover;
+
+  .plates {
+    height: 50%;
+    #pict_1 {
+      background-image: url('../../images/plat_reservation-1.jpg');
+      background-size: cover;
+      background-position: center;
+      float: left;
+    }
+    #pict_2 {
+      background-image: url('../../images/plat_reservation_2.jpg');
+      background-size: cover;
+      background-position: center;
+      float: right;
+    }
+  }
+
+  .reservation {
+    height: 50%;
+    width: 100%;
+    display: table;
+    .module_reservation {
+      display: table-cell;
+      vertical-align: middle;
+      h2 {
+        color: white;
+        border: 2px solid white;
+        display: inline;
+        padding: 20px;
+        font-weight: lighter;
+        text-transform: uppercase;
+      }
+    }
+  }
+
+  @media screen and (max-width: 1176px) {
+    #pict_1 {
+      height: 100%;
+      width: 100%;
+
+    }
+    #pict_2 {
+      display: none;
+    }
+  }
+
+  @media screen and (min-width: 1177px) {
+    #pict_1 {
+      height: 100%;
+      width: 50%;
+    }
+    #pict_2 {
+      height: 100%;
+      width: 50%;
+    }
+  }
+
+  @media screen and (min-height: 811px) {
+
+  }
+  @media screen and (max-height: 810px) {
+
+  }
+}
