@@ -249,3 +249,112 @@ title: Le Wagon Middleman boilerplate
     </div>
   </div>
 </div>
+
+<!-- PAGE 6 -->
+<div class="page_6">
+
+  <script src='https://maps.googleapis.com/maps/api/js?key=AIzaSyCk1t6XK-QH37f0OAN-VSleZEEyxCMG-XQ&sensor=false&extension=.js'></script>
+
+  <script>
+      google.maps.event.addDomListener(window, 'load', init);
+      var map;
+      function init() {
+          var mapOptions = {
+              center: new google.maps.LatLng(48.866991,2.317785),
+              zoom: 16,
+              zoomControl: false,
+              disableDoubleClickZoom: true,
+              mapTypeControl: false,
+              scaleControl: false,
+              scrollwheel: false,
+              panControl: true,
+              streetViewControl: false,
+              draggable : false,
+              overviewMapControl: false,
+              overviewMapControlOptions: {
+                  opened: false,
+              },
+              mapTypeId: google.maps.MapTypeId.ROADMAP,
+              styles: [{"featureType":"landscape","stylers":[{"saturation":-100},{"lightness":65},{"visibility":"on"}]},{"featureType":"poi","stylers":[{"saturation":-100},{"lightness":51},{"visibility":"simplified"}]},{"featureType":"road.highway","stylers":[{"saturation":-100},{"visibility":"simplified"}]},{"featureType":"road.arterial","stylers":[{"saturation":-100},{"lightness":30},{"visibility":"on"}]},{"featureType":"road.local","stylers":[{"saturation":-100},{"lightness":40},{"visibility":"on"}]},{"featureType":"transit","stylers":[{"saturation":-100},{"visibility":"simplified"}]},{"featureType":"administrative.province","stylers":[{"visibility":"off"}]},{"featureType":"water","elementType":"labels","stylers":[{"visibility":"on"},{"lightness":-25},{"saturation":-100}]},{"featureType":"water","elementType":"geometry","stylers":[{"hue":"#ffff00"},{"lightness":-25},{"saturation":-97}]}],
+          }
+          var mapElement = document.getElementById('Restaurant');
+          var map = new google.maps.Map(mapElement, mapOptions);
+          var locations = [
+  ['Restaurant', 'undefined', 'undefined', 'undefined', 'undefined', 48.869018,  2.318028, 'https://mapbuildr.com/assets/img/markers/ellipse-black.png']
+          ];
+          for (i = 0; i < locations.length; i++) {
+        if (locations[i][1] =='undefined'){ description ='';} else { description = locations[i][1];}
+        if (locations[i][2] =='undefined'){ telephone ='';} else { telephone = locations[i][2];}
+        if (locations[i][3] =='undefined'){ email ='';} else { email = locations[i][3];}
+             if (locations[i][4] =='undefined'){ web ='';} else { web = locations[i][4];}
+             if (locations[i][7] =='undefined'){ markericon ='';} else { markericon = locations[i][7];}
+              marker = new google.maps.Marker({
+                  icon: markericon,
+                  position: new google.maps.LatLng(locations[i][5], locations[i][6]),
+                  map: map,
+                  title: locations[i][0],
+                  desc: description,
+                  tel: telephone,
+                  email: email,
+                  web: web
+              });
+  link = '';     }
+
+  }
+  </script>
+  <style>
+      #Restaurant {
+          height:400px;
+          width:550px;
+      }
+      .gm-style-iw * {
+          display: block;
+          width: 100%;
+      }
+      .gm-style-iw h4, .gm-style-iw p {
+          margin: 0;
+          padding: 0;
+      }
+      .gm-style-iw a {
+          color: #4272db;
+      }
+  </style>
+
+  <div id='Restaurant'></div>
+  <div class="contact">
+    <div class="container_with_margin">
+      <br>
+      <h3 class='tk-europa'>CONTACT US</h3> <hr> <br>
+
+      <div class="contact_details">
+        <h4 class='tk-garamond-premier-pro'>41 Avenue du Faubourd Saint-Honoré</h4>
+        <h4 class='tk-garamond-premier-pro'>75008 Paris</h4> <br> <hr>
+        <p class="tk-europa days">TUES — FRI</p>
+        <h4 class='tk-garamond-premier-pro'>6:00 – 10:00pm</h4><br>
+        <p class="tk-europa days">SAT</p>
+        <h4 class='tk-garamond-premier-pro'>5:30 – 10:00pm</h4><br>
+        <p class="tk-europa days">SUN</p>
+        <h4 class='tk-garamond-premier-pro'>5:30 – 9:30pm</h4><br>
+        <hr>
+      </div>
+
+
+      <div class="col-xs-6 contact_mobile">
+        <h4 class='tk-garamond-premier-pro'>41 Avenue du Faubourd Saint-Honoré</h4>
+        <h4 class='tk-garamond-premier-pro'>75008 Paris</h4>
+      </div>
+      <div class="col-xs-6 contact_mobile">
+        <p class="tk-europa days">TUES — FRI</p>
+        <h4 class='tk-garamond-premier-pro'>6:00 – 10:00pm</h4><br>
+        <p class="tk-europa days">SAT</p>
+        <h4 class='tk-garamond-premier-pro'>5:30 – 10:00pm</h4><br>
+        <p class="tk-europa days">SUN</p>
+        <h4 class='tk-garamond-premier-pro'>5:30 – 9:30pm</h4>
+
+      </div>
+
+    </div>
+  </div>
+
+
+</div>
