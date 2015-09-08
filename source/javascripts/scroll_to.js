@@ -13,6 +13,18 @@ $(document).ready(function(){
       }, 1000);
       return false;
   });
+  $("#anchor2_mobile").click(function() {
+      $('html, body').animate({
+          scrollTop: $("#page3").offset().top
+      }, 1000);
+      return false;
+  });
+  $("#anchor_2_mobile").click(function() {
+      $('html, body').animate({
+          scrollTop: $("#page3").offset().top
+      }, 1000);
+      return false;
+  });
   $("#anchor3").click(function() {
       $('html, body').animate({
           scrollTop: $("#page4").offset().top
@@ -31,4 +43,4 @@ $(document).ready(function(){
       }, 1000);
       return false;
   });
-})
+});
