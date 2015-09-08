@@ -1,4 +1,8 @@
-
+@media screen and (max-device-width: 768px) and (orientation: portrait) {
+  .ancre {
+    display: none;
+  }
+}
 @media screen and (max-device-width: 768px) {
   // Taille des polices
 
@@ -24,6 +28,9 @@
   .container_with_margin {
     margin-right: 15px;
     margin-left: 15px;
+  }
+  .ancre {
+    display: none;
   }
 }
 @media screen and (min-width: 768px) and (max-width: 999px) {
