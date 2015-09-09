@@ -38,6 +38,9 @@
   .ancre {
     display: none;
   }
+  .menu_link {
+    display: none;
+  }
 }
 @media screen and (min-width: 768px) and (max-width: 999px) {
   // Taille des polices
@@ -64,7 +67,9 @@
     margin-right: 30px;
     margin-left: 30px;
   }
-
+  .menu_link {
+    display: none;
+  }
 }
 @media screen and (min-width: 1000px) and (max-width: 1349px) {
   // Taille des polices
@@ -91,6 +96,9 @@
     margin-right: 45px;
     margin-left: 45px;
   }
+  .menu_link {
+    display: none;
+  }
 }
 @media screen and (min-width: 1350px) {
   // Taille des polices
@@ -109,6 +117,9 @@
   h4 {
     font-size: 24px;
     letter-spacing: 1px;
+  }
+  .menu_link {
+    display: none;
   }
 
   p {
