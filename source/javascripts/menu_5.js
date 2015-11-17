@@ -1,6 +1,6 @@
 $(document).ready(function(){
   //Taille de l'écran
-  $(document).on('scroll', function(){
+  $(document).on('resize', function(){
     var windows_height = $('.page_1').height();
     // Taille des parties du menu 2
     var menu_height = $('.page_4 > .menu_zone').height();

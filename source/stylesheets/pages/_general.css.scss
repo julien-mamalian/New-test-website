@@ -8,6 +8,10 @@
   .menu_link {
     display: none;
   }
+  .container_with_margin {
+    margin-right: 15px;
+    margin-left: 15px;
+  }
 }
 @media screen and (max-device-width: 768px) {
   // Taille des polices
