@@ -2,12 +2,16 @@ body,html{
   height:100%;
 }
 
+#fullpage {
+  height: 100%;
+}
 
 .page_1 {
   background-image: url('../../images/restaurant.jpg');
   background-size: cover;
   background-position: center;
   min-height: 100%;
+
 
   h1 {
     text-transform: uppercase;

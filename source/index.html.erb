@@ -2,15 +2,17 @@
 title: Le Wagon Middleman boilerplate
 ---
 <!-- PAGE 1 -->
-  <div class="page_1 text-center" id='page1'>
-    <h1 class='tk-europa'>
+<div id="fullpage">
+
+  <div class="page_1 text-center section" id='page1'>
+    <h1 class='tk-europa restaurant_name'>
         Restaurant <br> <h2 class="tk-europa"> paris </h2>
     </h1>
     <i id="anchor1" class="fa fa-angle-down fa-5x ancre"></i>
   </div>
 
 <!-- PAGE 2 -->
-  <div class="page_2 tk-europa" id="page2">
+  <div class="page_2 tk-europa section" id="page2">
     <div class="chieves_nav text-center">
       <div class="chieves_nav_ul">
         <ul class="text-center employees_list">
@@ -100,7 +102,7 @@ title: Le Wagon Middleman boilerplate
 
 
 <!-- PAGE 3 -->
-  <div class="page_3" id="page3">
+  <div class="page_3 section" id="page3">
 
     <div class="flexslider">
       <ul class="slides">
@@ -131,7 +133,7 @@ title: Le Wagon Middleman boilerplate
   </div>
 
 <!-- PAGE 4 -->
-  <div class="page_4" id='page4'>
+  <div class="page_4 section" id='page4'>
     <div class="menu_zone">
       <br>
       <h3 class="tk-europa">
@@ -174,11 +176,7 @@ title: Le Wagon Middleman boilerplate
             <h4 class='tk-garamond-premier-pro'>Roasted Grapes, Chickpeas, Ginger Scallion Viniagrette - <p class="tk-europa">14</p> </h4><br>
             <br><br>
           </div>
-          <div class="new_meal">
-            <p class="tk-europa">foie gras</p><br>
-            <h4 class='tk-garamond-premier-pro'>Torchon, Candied Rhubarb, Cippolini, Watercress, Brioche and Hazelnut Granola - <p class="tk-europa">20</p> </h4><br>
-            <br><br>
-          </div>
+
 
         </div>
         <div class="main_meals">
@@ -205,11 +203,6 @@ title: Le Wagon Middleman boilerplate
           <div class="new_meal">
             <p class="tk-europa">octopus</p><br>
             <h4 class='tk-garamond-premier-pro'>Roasted Grapes, Chickpeas, Ginger Scallion Viniagrette - <p class="tk-europa">14</p> </h4><br>
-            <br><br>
-          </div>
-          <div class="new_meal">
-            <p class="tk-europa">foie gras</p><br>
-            <h4 class='tk-garamond-premier-pro'>Torchon, Candied Rhubarb, Cippolini, Watercress, Brioche and Hazelnut Granola - <p class="tk-europa">20</p> </h4><br>
             <br><br>
           </div>
         </div>
@@ -239,11 +232,7 @@ title: Le Wagon Middleman boilerplate
             <h4 class='tk-garamond-premier-pro'>Roasted Grapes, Chickpeas, Ginger Scallion Viniagrette - <p class="tk-europa">14</p> </h4><br>
             <br><br>
           </div>
-          <div class="new_meal">
-            <p class="tk-europa">foie gras</p><br>
-            <h4 class='tk-garamond-premier-pro'>Torchon, Candied Rhubarb, Cippolini, Watercress, Brioche and Hazelnut Granola - <p class="tk-europa">20</p> </h4><br>
-            <br><br>
-          </div>
+
         </div>
         <br><br><br><br>
         <i id="anchor4" class="fa fa-angle-down fa-5x ancre"></i>
@@ -252,7 +241,7 @@ title: Le Wagon Middleman boilerplate
   </div>
 
 <!-- PAGE 5 -->
-<div class="page_5" id='page5'>
+<div class="page_5 section" id='page5'>
   <div class="plates">
     <div class="pict" id='pict_1'></div>
     <div class="pict" id='pict_2'></div>
@@ -266,130 +255,126 @@ title: Le Wagon Middleman boilerplate
 </div>
 
 <!-- PAGE 6 -->
-<div class="page_6" id='page6'>
+  <div class="page_6 section" id='page6'>
 
-  <script src='https://maps.googleapis.com/maps/api/js?key=AIzaSyCk1t6XK-QH37f0OAN-VSleZEEyxCMG-XQ&sensor=false&extension=.js'></script>
+    <script src='https://maps.googleapis.com/maps/api/js?key=AIzaSyCk1t6XK-QH37f0OAN-VSleZEEyxCMG-XQ&sensor=false&extension=.js'></script>
 
-  <script>
-      google.maps.event.addDomListener(window, 'load', init);
-      var map;
-      function init() {
-          var mapOptions = {
-              center: new google.maps.LatLng(48.866991,2.317785),
-              zoom: 16,
-              zoomControl: false,
-              disableDoubleClickZoom: true,
-              mapTypeControl: false,
-              scaleControl: false,
-              scrollwheel: false,
-              panControl: true,
-              streetViewControl: false,
-              draggable : false,
-              overviewMapControl: false,
-              overviewMapControlOptions: {
-                  opened: false,
-              },
-              mapTypeId: google.maps.MapTypeId.ROADMAP,
-              styles: [{"featureType":"landscape","stylers":[{"saturation":-100},{"lightness":65},{"visibility":"on"}]},{"featureType":"poi","stylers":[{"saturation":-100},{"lightness":51},{"visibility":"simplified"}]},{"featureType":"road.highway","stylers":[{"saturation":-100},{"visibility":"simplified"}]},{"featureType":"road.arterial","stylers":[{"saturation":-100},{"lightness":30},{"visibility":"on"}]},{"featureType":"road.local","stylers":[{"saturation":-100},{"lightness":40},{"visibility":"on"}]},{"featureType":"transit","stylers":[{"saturation":-100},{"visibility":"simplified"}]},{"featureType":"administrative.province","stylers":[{"visibility":"off"}]},{"featureType":"water","elementType":"labels","stylers":[{"visibility":"on"},{"lightness":-25},{"saturation":-100}]},{"featureType":"water","elementType":"geometry","stylers":[{"hue":"#ffff00"},{"lightness":-25},{"saturation":-97}]}],
-          }
-          var mapElement = document.getElementById('Restaurant');
-          var map = new google.maps.Map(mapElement, mapOptions);
-          var locations = [
-  ['Restaurant', 'undefined', 'undefined', 'undefined', 'undefined', 48.869018,  2.318028, 'https://mapbuildr.com/assets/img/markers/ellipse-black.png']
-          ];
-          for (i = 0; i < locations.length; i++) {
-        if (locations[i][1] =='undefined'){ description ='';} else { description = locations[i][1];}
-        if (locations[i][2] =='undefined'){ telephone ='';} else { telephone = locations[i][2];}
-        if (locations[i][3] =='undefined'){ email ='';} else { email = locations[i][3];}
-             if (locations[i][4] =='undefined'){ web ='';} else { web = locations[i][4];}
-             if (locations[i][7] =='undefined'){ markericon ='';} else { markericon = locations[i][7];}
-              marker = new google.maps.Marker({
-                  icon: markericon,
-                  position: new google.maps.LatLng(locations[i][5], locations[i][6]),
-                  map: map,
-                  title: locations[i][0],
-                  desc: description,
-                  tel: telephone,
-                  email: email,
-                  web: web
-              });
-  link = '';     }
+    <script>
+        google.maps.event.addDomListener(window, 'load', init);
+        var map;
+        function init() {
+            var mapOptions = {
+                center: new google.maps.LatLng(48.866991,2.317785),
+                zoom: 16,
+                zoomControl: false,
+                disableDoubleClickZoom: true,
+                mapTypeControl: false,
+                scaleControl: false,
+                scrollwheel: false,
+                panControl: true,
+                streetViewControl: false,
+                draggable : false,
+                overviewMapControl: false,
+                overviewMapControlOptions: {
+                    opened: false,
+                },
+                mapTypeId: google.maps.MapTypeId.ROADMAP,
+                styles: [{"featureType":"landscape","stylers":[{"saturation":-100},{"lightness":65},{"visibility":"on"}]},{"featureType":"poi","stylers":[{"saturation":-100},{"lightness":51},{"visibility":"simplified"}]},{"featureType":"road.highway","stylers":[{"saturation":-100},{"visibility":"simplified"}]},{"featureType":"road.arterial","stylers":[{"saturation":-100},{"lightness":30},{"visibility":"on"}]},{"featureType":"road.local","stylers":[{"saturation":-100},{"lightness":40},{"visibility":"on"}]},{"featureType":"transit","stylers":[{"saturation":-100},{"visibility":"simplified"}]},{"featureType":"administrative.province","stylers":[{"visibility":"off"}]},{"featureType":"water","elementType":"labels","stylers":[{"visibility":"on"},{"lightness":-25},{"saturation":-100}]},{"featureType":"water","elementType":"geometry","stylers":[{"hue":"#ffff00"},{"lightness":-25},{"saturation":-97}]}],
+            }
+            var mapElement = document.getElementById('Restaurant');
+            var map = new google.maps.Map(mapElement, mapOptions);
+            var locations = [
+    ['Restaurant', 'undefined', 'undefined', 'undefined', 'undefined', 48.869018,  2.318028, 'https://mapbuildr.com/assets/img/markers/ellipse-black.png']
+            ];
+            for (i = 0; i < locations.length; i++) {
+          if (locations[i][1] =='undefined'){ description ='';} else { description = locations[i][1];}
+          if (locations[i][2] =='undefined'){ telephone ='';} else { telephone = locations[i][2];}
+          if (locations[i][3] =='undefined'){ email ='';} else { email = locations[i][3];}
+               if (locations[i][4] =='undefined'){ web ='';} else { web = locations[i][4];}
+               if (locations[i][7] =='undefined'){ markericon ='';} else { markericon = locations[i][7];}
+                marker = new google.maps.Marker({
+                    icon: markericon,
+                    position: new google.maps.LatLng(locations[i][5], locations[i][6]),
+                    map: map,
+                    title: locations[i][0],
+                    desc: description,
+                    tel: telephone,
+                    email: email,
+                    web: web
+                });
+    link = '';     }
 
-  }
-  </script>
-  <style>
-      #Restaurant {
-          height:400px;
-          width:550px;
-      }
-      .gm-style-iw * {
-          display: block;
-          width: 100%;
-      }
-      .gm-style-iw h4, .gm-style-iw p {
-          margin: 0;
-          padding: 0;
-      }
-      .gm-style-iw a {
-          color: #4272db;
-      }
-  </style>
+    }
+    </script>
+    <style>
+        #Restaurant {
+            height:400px;
+            width:550px;
+        }
+        .gm-style-iw * {
+            display: block;
+            width: 100%;
+        }
+        .gm-style-iw h4, .gm-style-iw p {
+            margin: 0;
+            padding: 0;
+        }
+        .gm-style-iw a {
+            color: #4272db;
+        }
+    </style>
 
-  <div id='Restaurant'></div>
-  <div class="contact">
-    <div class="container_with_margin">
-      <br>
-      <h3 class='tk-europa'>CONTACT US</h3> <hr> <br>
+    <div id='Restaurant'></div>
+    <div class="contact">
+      <div class="container_with_margin">
+        <br>
+        <h3 class='tk-europa'>CONTACT US</h3> <hr> <br>
 
-      <div class="contact_details">
-        <h4 class='tk-garamond-premier-pro'>41 Avenue du Faubourd Saint-Honoré</h4>
-        <h4 class='tk-garamond-premier-pro'>75008 Paris</h4> <br> <hr>
-        <p class="tk-europa days">TUES — FRI</p>
-        <h4 class='tk-garamond-premier-pro'>6:00 – 10:00pm</h4><br>
-        <p class="tk-europa days">SAT</p>
-        <h4 class='tk-garamond-premier-pro'>5:30 – 10:00pm</h4><br>
-        <p class="tk-europa days">SUN</p>
-        <h4 class='tk-garamond-premier-pro'>5:30 – 9:30pm</h4><br>
-        <hr>
+        <div class="contact_details">
+          <h4 class='tk-garamond-premier-pro'>41 Avenue du Faubourd Saint-Honoré</h4>
+          <h4 class='tk-garamond-premier-pro'>75008 Paris</h4> <br> <hr>
+          <p class="tk-europa days">TUES — FRI</p>
+          <h4 class='tk-garamond-premier-pro'>6:00 – 10:00pm</h4><br>
+          <p class="tk-europa days">SAT</p>
+          <h4 class='tk-garamond-premier-pro'>5:30 – 10:00pm</h4><br>
+          <p class="tk-europa days">SUN</p>
+          <h4 class='tk-garamond-premier-pro'>5:30 – 9:30pm</h4><br>
+          <hr>
+        </div>
+
+
+        <div class="col-xs-6 contact_mobile">
+          <h4 class='tk-garamond-premier-pro'>41 Avenue du Faubourd Saint-Honoré</h4>
+          <h4 class='tk-garamond-premier-pro'>75008 Paris</h4>
+        </div>
+        <div class="col-xs-6 contact_mobile">
+          <p class="tk-europa days">TUES — FRI</p>
+          <h4 class='tk-garamond-premier-pro'>6:00 – 10:00pm</h4><br>
+          <p class="tk-europa days">SAT</p>
+          <h4 class='tk-garamond-premier-pro'>5:30 – 10:00pm</h4><br>
+          <p class="tk-europa days">SUN</p>
+          <h4 class='tk-garamond-premier-pro'>5:30 – 9:30pm</h4>
+
+        </div>
+
       </div>
-
-
-      <div class="col-xs-6 contact_mobile">
-        <h4 class='tk-garamond-premier-pro'>41 Avenue du Faubourd Saint-Honoré</h4>
-        <h4 class='tk-garamond-premier-pro'>75008 Paris</h4>
-      </div>
-      <div class="col-xs-6 contact_mobile">
-        <p class="tk-europa days">TUES — FRI</p>
-        <h4 class='tk-garamond-premier-pro'>6:00 – 10:00pm</h4><br>
-        <p class="tk-europa days">SAT</p>
-        <h4 class='tk-garamond-premier-pro'>5:30 – 10:00pm</h4><br>
-        <p class="tk-europa days">SUN</p>
-        <h4 class='tk-garamond-premier-pro'>5:30 – 9:30pm</h4>
-
-      </div>
-
     </div>
   </div>
 
-
-</div>
-
-<div class="menu">
-  <div class="rubriques">
-    <ul>
-      <li><a href="#page1"><h4 class='tk-europa'>Home</h4></a></li>
-      <li><a href="#page2"><h4 class='tk-europa'>Chiefs</h4></a></li>
-      <li><a href="#page3"><h4 class='tk-europa'>The restaurant</h4></a></li>
-      <li><a href="#page4"><h4 class='tk-europa'>Menu</h4></a></li>
-      <li><a href="#page5"><h4 class='tk-europa'>Reservations</h4></a></li>
-      <li><a href="#page6"><h4 class='tk-europa'>Contact</h4></a></li>
-    </ul>
-    <div class="closed">
-      <h4 class='tk-europa'>FERMER X</h4>
+  <div class="menu">
+    <div class="rubriques">
+      <ul>
+        <li><a href="#page1"><h4 class='tk-europa case'>Home</h4></a></li>
+        <li><a href="#page2"><h4 class='tk-europa case'>Chiefs</h4></a></li>
+        <li><a href="#page3"><h4 class='tk-europa case '>The restaurant</h4></a></li>
+        <li><a href="#page4"><h4 class='tk-europa case'>Menu</h4></a></li>
+        <li><a href="#page5"><h4 class='tk-europa case'>Reservations</h4></a></li>
+        <li><a href="#page6"><h4 class='tk-europa case'>Contact</h4></a></li>
+      </ul>
     </div>
   </div>
-</div>
 
-<div class="menu_link">
-  <h3 class='tk-europa'>MENU</h3>
+  <div class="menu_link">
+    <h3 class='tk-europa'>MENU</h3>
+  </div>
 </div>
