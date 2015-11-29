@@ -135,3 +135,14 @@
     margin-left: 60px;
   }
 }
+
+#activated_zone {
+  position: fixed;
+  height: 100%;
+  width: 100%;
+  left: -350px;
+  z-index: 100000000000;
+  top: 0;
+  display: none;
+  overflow: hidden;
+}
