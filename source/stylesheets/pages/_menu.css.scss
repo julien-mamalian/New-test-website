@@ -7,9 +7,16 @@
   top: 0;
   display: table;
   z-index: 999999999;
+  ul {
+    padding-left: 0;
+    margin-top: 50px;
+  }
 
-  .case {
-
+  li div:hover {
+    background-color: #303541;
+  }
+  a:hover {
+    text-decoration: none;
   }
   .closed  {
     position: absolute;
@@ -30,10 +37,12 @@
   }
 
   h4 {
-    margin-top: 50px;
-    margin-bottom: 50px;
+    padding-top: 22px;
+    padding-bottom: 22px;
     padding-left: 15px;
     padding-right: 15px;
+    margin-top: 0;
+    margin-bottom: 0;
     text-transform: uppercase;
     font-weight: lighter;
     color: white;
@@ -131,14 +140,14 @@
 @media screen and (min-width: 769px) and (max-width: 999px) {
   .menu {
     width: 350px;
-    // right: -350px;
+    right: -350px;
   }
 }
 @media screen and (min-width: 1000px) and (max-width: 1349px) {
 
   .menu {
     width: 350px;
-    // right: -350px ;
+    right: -350px ;
   }
 }
 @media screen and (min-width: 1350px) {
