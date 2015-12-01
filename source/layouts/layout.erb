@@ -9,14 +9,14 @@
     <!-- Use title if it's in the page YAML frontmatter -->
     <title><%= current_page.data.title || "The Middleman" %></title>
 
-
+    <%= stylesheet_link_tag "all" %>
   </head>
 
   <body class="<%= page_classes %>">
 
 
     <%= yield %>
-    <%= stylesheet_link_tag "all" %>
+
     <%= javascript_include_tag  "all" %>
     <script src="//use.typekit.net/njo0qqr.js"></script>
     <script>try{Typekit.load({ async: true });}catch(e){}</script>
