@@ -40,6 +40,7 @@ $(document).ready(function(){
   });
 
   $('#activated_zone').on('click',function(){
+    var LinkTo = $(this).find('.link_menu').attr('href');
     $(this).css({
       'display': 'none'
     })
