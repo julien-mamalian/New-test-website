@@ -17,5 +17,4 @@ $(document).ready(function(){
   SlideUpOnScroll('.restaurant_details', '.page_3');
   SlideUpOnScroll('.menu_zone', '.page_4');
   SlideUpOnScroll('.contact', '.page_6');
-
 });
