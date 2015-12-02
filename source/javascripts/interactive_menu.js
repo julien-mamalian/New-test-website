@@ -8,7 +8,8 @@ $(document).ready(function(){
 
   var MenuWidth = $('.menu').width() * -1;
 
-  $('.chieves_nav_ul').on('click', function(){
+  $('.menu_hamburger').on('click', function(){
+    $(this).hide();
     MenuWidth = $('.menu').width() * -1;
 
     $('#activated_zone').css({
@@ -35,7 +36,7 @@ $(document).ready(function(){
     $('[id^="page"]').animate({
       'left': '0'
     }, 1000);
-
+    $('.menu_hamburger').fadeIn(500);
 
   });
 
@@ -50,6 +51,7 @@ $(document).ready(function(){
     $('[id^="page"]').animate({
       'left': '0'
     }, 1000);
+    $('.menu_hamburger').fadeIn(500);
     $('html, body').delay(1000).animate({
       scrollTop: $(LinkTo).offset().top
     }, 1000);
@@ -69,6 +71,7 @@ $(document).ready(function(){
     $('[id^="page"]').animate({
       'left': '0'
     }, 1000);
+    $('.menu_hamburger').fadeIn(500);
     $('html, body').delay(1000).animate({
       scrollTop: $(LinkTo).offset().top
     }, 1250);

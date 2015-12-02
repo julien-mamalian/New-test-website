@@ -146,3 +146,16 @@
   display: none;
   overflow: hidden;
 }
+
+.menu_hamburger {
+  position: fixed;
+  top: 10px;
+  right: 10px;
+  z-index: 100000;
+  cursor: pointer;
+  img {
+    width: 70px;
+    cursor: pointer;
+  }
+}
+

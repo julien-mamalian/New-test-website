@@ -31,9 +31,7 @@
 
   .rubriques {
     display: table-cell;
-
     text-align: center;
-    position: relative;
   }
 
   h4 {
@@ -155,5 +153,26 @@
   .menu {
     right: -350px ;
     width: 350px;
+  }
+}
+
+.infos_menu {
+  background-color: white;
+  position: absolute;
+  bottom: 0;
+  height: 40%;
+  width: 100%;
+  left: 0;
+  padding-left: 20px;
+  padding-right: 20px;
+  h4 {
+    color: black;
+  }
+  .info_utiles {
+    text-transform: uppercase;
+    text-align: center;
+  }
+  .logo {
+    width: 25%;
   }
 }
