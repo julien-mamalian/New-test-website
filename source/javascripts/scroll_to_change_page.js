@@ -137,12 +137,12 @@ $(document).ready(function() {
 
 
   $('.menu_text').on('click',function() {
-    $('.modal_menu').show();
+    $('.modal_menu').fadeIn(1700);
     $.fn.fullpage.destroy();
     $('body').css({ 'overflow-y' : 'hidden'});
   });
   $('.cross_zone').on('click',function() {
-    $('.modal_menu').hide();
+    $('.modal_menu').fadeOut(1700);
     $('#fullpage').fullpage({
       afterLoad: function(anchorLink, index){
         var loadedSection = $(this);
