@@ -1374,19 +1374,19 @@
         */
         function lazyLoad(destiny){
             //Lazy loading images, videos and audios
-            var slide = destiny.find(SLIDE_ACTIVE_SEL);
-            if( slide.length ) {
-                destiny = $(slide);
-            }
+            // var slide = destiny.find(SLIDE_ACTIVE_SEL);
+            // if( slide.length ) {
+            //     destiny = $(slide);
+            // }
 
-            destiny.find('img[data-src], source[data-src], audio[data-src]').each(function(){
-                $(this).attr('src', $(this).data('src'));
-                $(this).removeAttr('data-src');
+            // destiny.find('img[data-src], source[data-src], audio[data-src]').each(function(){
+            //     $(this).attr('src', $(this).data('src'));
+            //     $(this).removeAttr('data-src');
 
-                if($(this).is('source')){
-                    $(this).closest('video').get(0).load();
-                }
-            });
+            //     if($(this).is('source')){
+            //         $(this).closest('video').get(0).load();
+            //     }
+            // });
         }
 
         /**

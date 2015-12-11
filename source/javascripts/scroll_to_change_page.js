@@ -5,9 +5,10 @@ $(document).ready(function() {
   $('#fullpage').fullpage({
 
     afterLoad: function(anchorLink, index){
-        var loadedSection = $(this);
-
+      var loadedSection = $(this);
       SectionActivated = index;
+
+      ownlazyLoad(SectionActivated);
     }
   });
 
@@ -99,5 +100,23 @@ $(document).ready(function() {
     }, 1250);
 
   });
+
+  $('body').on('scroll', function(){
+    console.log('true');
+  });
+
+  function ownlazyLoad(number) {
+    //Lazy loading images, videos and audios
+    var Section = number + 1;
+    $('#page' + Section).find('img[data-src], soure[data-src], audio[data-src]').each(function(){
+      $(this).attr('src', $(this).data('src'));
+      $(this).removeAttr('data-src');
+
+      if($(this).is('source')){
+          $(this).closest('video').get(0).load();
+      }
+    });
+  };
+
 });
 

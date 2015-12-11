@@ -16,16 +16,20 @@ body,html{
   .plates {
     height: 50%;
     #pict_1 {
-      background-image: url('../../images/plat_reservation-1.jpg');
-      background-size: cover;
-      background-position: center;
       float: left;
+      img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+      }
     }
     #pict_2 {
-      background-image: url('../../images/plat_reservation_2.jpg');
-      background-size: cover;
-      background-position: center;
       float: right;
+      img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+      }
     }
   }
 

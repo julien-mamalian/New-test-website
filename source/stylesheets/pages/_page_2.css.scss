@@ -37,10 +37,12 @@ body,html{
   .chief_picture {
     width: 50%;
     height: 100%;
-    background-image: url('../../images/chief.jpg');
-    background-size: cover;
-    background-position: center;
     float: left;
+    img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
   }
   .chief_details_1 {
     width: 50%;
@@ -57,10 +59,12 @@ body,html{
   .chief_picture2 {
     width: 50%;
     height: 100%;
-    background-image: url('../../images/second.png');
-    background-size: cover;
-    background-position: top;
     float: left;
+    img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
   }
 
   .chief_details_2 {
@@ -83,9 +87,11 @@ body,html{
     .chief_picture {
       width: 100%;
       height: 45%;
-      background-image: url('../../images/chief.jpg');
-      background-size: cover;
-      background-position: center;
+      img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+      }
     }
     .chief_details_1 {
       width: 100%;
@@ -100,9 +106,11 @@ body,html{
     .chief_picture2 {
       width: 100%;
       height: 45%;
-      background-image: url('../../images/second.png');
-      background-size: cover;
-      background-position: top;
+      img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+      }
     }
 
     .chief_details_2 {
