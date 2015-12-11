@@ -7,7 +7,6 @@ $(document).ready(function() {
     afterLoad: function(anchorLink, index){
       var loadedSection = $(this);
       SectionActivated = index;
-
       ownlazyLoad(SectionActivated);
     }
   });
@@ -16,13 +15,25 @@ $(document).ready(function() {
 
   function OverflowHidden(Decision) {
     if (Decision == true) {
-      $('body').css({
-        'overflow': 'hidden !important'
-      })
+      $('body').css({ 'overflow' : 'hidden'});
+
     } else {
-      $('body').css({
-        'overflow': 'visible'
-      })
+      $('body').css({ 'overflow' : 'visible'});
+    }
+  }
+
+  function FullPageState(State) {
+    if (State == true) {
+      $('#fullpage').fullpage({
+
+        afterLoad: function(anchorLink, index){
+          var loadedSection = $(this);
+          SectionActivated = index;
+          ownlazyLoad(SectionActivated);
+        }
+      });
+    } else {
+      $.fn.fullpage.destroy();
     }
   }
 
@@ -43,6 +54,7 @@ $(document).ready(function() {
     MenuWidth = $('.menu').width() * -1;
 
     ActivatedZone('block');
+    FullPageState(false);
     OverflowHidden(true);
     MenuRight(0);
 
@@ -57,6 +69,7 @@ $(document).ready(function() {
 
     ActivatedZone('none');
     OverflowHidden(false);
+    FullPageState(true);
     MenuRight(MenuWidth);
 
     $('#page' + SectionActivated).animate({
@@ -71,6 +84,7 @@ $(document).ready(function() {
 
     ActivatedZone('none');
     OverflowHidden(false);
+    FullPageState(true);
     MenuRight(MenuWidth);
 
     $('#page' + SectionActivated).animate({
@@ -89,6 +103,7 @@ $(document).ready(function() {
     MenuWidth = $('.menu').width() * -1;
     OverflowHidden(false);
     ActivatedZone('none');
+    FullPageState(true);
     MenuRight(MenuWidth);
 
     $('#page' + SectionActivated).animate({
@@ -101,9 +116,6 @@ $(document).ready(function() {
 
   });
 
-  $('body').on('scroll', function(){
-    console.log('true');
-  });
 
   function ownlazyLoad(number) {
     //Lazy loading images, videos and audios
@@ -117,6 +129,30 @@ $(document).ready(function() {
       }
     });
   };
+
+
+  // MOdale
+
+  $('.modal_menu').hide();
+
+
+  $('.menu_text').on('click',function() {
+    $('.modal_menu').show();
+    $.fn.fullpage.destroy();
+    $('body').css({ 'overflow-y' : 'hidden'});
+  });
+  $('.cross_zone').on('click',function() {
+    $('.modal_menu').hide();
+    $('#fullpage').fullpage({
+      afterLoad: function(anchorLink, index){
+        var loadedSection = $(this);
+        SectionActivated = index;
+        ownlazyLoad(SectionActivated);
+      }
+    });
+  });
+
+
 
 });
 
