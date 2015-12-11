@@ -1,5 +1,4 @@
 $(document).ready(function(){
-
   function SlideUpOnScroll(zone, page) {
     $(zone).css('bottom', '-30px');
     $(document).on('scroll',function(){
@@ -17,4 +16,5 @@ $(document).ready(function(){
   SlideUpOnScroll('.restaurant_details', '.page_3');
   SlideUpOnScroll('.menu_zone', '.page_4');
   SlideUpOnScroll('.contact', '.page_6');
+
 });

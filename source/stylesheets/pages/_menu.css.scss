@@ -1,3 +1,14 @@
+.menu_hamburger {
+  position: fixed;
+  top: 10px;
+  right: 10px;
+  z-index: 100;
+  cursor: pointer;
+  img {
+    width: 90px;
+    cursor: pointer;
+  }
+}
 
 .menu {
   height: 100%;
