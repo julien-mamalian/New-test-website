@@ -69,7 +69,13 @@ $(document).ready(function() {
 
     ActivatedZone('none');
     OverflowHidden(false);
-    FullPageState(true);
+
+    if (window.matchMedia("screen and (max-width:768px)").matches) {
+
+    } else{
+      FullPageState(true);
+    }
+
     MenuRight(MenuWidth);
 
     $('#page' + SectionActivated).animate({
@@ -84,7 +90,11 @@ $(document).ready(function() {
 
     ActivatedZone('none');
     OverflowHidden(false);
-    FullPageState(true);
+    if (window.matchMedia("screen and (max-width:768px)").matches) {
+
+    } else{
+      FullPageState(true);
+    }
     MenuRight(MenuWidth);
 
     $('#page' + SectionActivated).animate({
@@ -103,7 +113,11 @@ $(document).ready(function() {
     MenuWidth = $('.menu').width() * -1;
     OverflowHidden(false);
     ActivatedZone('none');
-    FullPageState(true);
+    if (window.matchMedia("screen and (max-width:768px)").matches) {
+
+    } else{
+      FullPageState(true);
+    }
     MenuRight(MenuWidth);
 
     $('#page' + SectionActivated).animate({
@@ -143,13 +157,12 @@ $(document).ready(function() {
   });
   $('.cross_zone').on('click',function() {
     $('.modal_menu').fadeOut(1700);
-    $('#fullpage').fullpage({
-      afterLoad: function(anchorLink, index){
-        var loadedSection = $(this);
-        SectionActivated = index;
-        ownlazyLoad(SectionActivated);
-      }
-    });
+
+    if (window.matchMedia("screen and (max-width:768px)").matches) {
+
+    } else{
+      FullPageState(true);
+    }
   });
 
 
