@@ -1,7 +1,7 @@
 $(document).ready(function() {
   var SectionActivated = 1;
   var MenuWidth = $('.menu').width() * -1;
-
+  ownlazyLoad(1);
   $('#fullpage').fullpage({
 
     afterLoad: function(anchorLink, index){
@@ -133,15 +133,27 @@ $(document).ready(function() {
 
   function ownlazyLoad(number) {
     //Lazy loading images, videos and audios
-    var Section = number + 1;
-    $('#page' + Section).find('img[data-src], soure[data-src], audio[data-src]').each(function(){
-      $(this).attr('src', $(this).data('src'));
-      $(this).removeAttr('data-src');
+    if (window.matchMedia("screen and (max-width:768px)").matches) {
+      $('#fullpage').find('img[data-src], soure[data-src], audio[data-src]').each(function(){
+        $(this).attr('src', $(this).data('src'));
+        $(this).removeAttr('data-src');
 
-      if($(this).is('source')){
-          $(this).closest('video').get(0).load();
-      }
-    });
+        if($(this).is('source')){
+            $(this).closest('video').get(0).load();
+        }
+      });
+    } else{
+      var Section = number + 1;
+      $('#page' + Section).find('img[data-src], soure[data-src], audio[data-src]').each(function(){
+        $(this).attr('src', $(this).data('src'));
+        $(this).removeAttr('data-src');
+
+        if($(this).is('source')){
+            $(this).closest('video').get(0).load();
+        }
+      });
+    }
+
   };
 
 
