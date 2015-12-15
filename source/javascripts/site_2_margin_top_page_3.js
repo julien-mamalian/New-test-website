@@ -21,4 +21,21 @@ $(document).ready(function(){
    var calculus_3 = Math.max(calculus_1, calculus_2)
 
    $('.page_3').css({'margin-top': Math.max(0, calculus_3 ) });
+
+
+
+  if (window.matchMedia("screen and (max-width:768px)").matches) {
+    var flex = $('.flexslider').load().height();
+    console.log(flex)
+    var restau = $('.restaurant_details').load().height();
+    console.log(restau)
+    // Calcul du margin top
+    var calculus_4 = flex + restau -45 - $('#page3').height();
+
+    var calculus_5 = Math.max(0, calculus_4)
+
+    $('.page_4').css({'margin-top': calculus_5 });
+  }
+
+
  });

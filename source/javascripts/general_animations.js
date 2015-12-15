@@ -28,6 +28,7 @@ $(document).ready(function(){
     return false;
   }
 
+
   // SlideUpOnScroll('.restaurant_details', '.page_3');
   // SlideUpOnScroll('.menu_zone', '.page_4');
   // SlideUpOnScroll('.contact', '.page_6');
@@ -35,10 +36,13 @@ $(document).ready(function(){
 //  SlideUpWithDelay('.hide_zone', '.page_2', 2000);
  // SlideUpWithDelay('.hide_zone_title', '.page_2', 1500);
 
+  if (window.matchMedia("screen and (max-width:768px)").matches) {
+    $('#page4').removeClass('section');
+    $('#page5').removeClass('section');
 
+  } else {
+    $('#page4').addClass('section');
+    $('#page5').addClass('section');
 
-
-
-
-
+  }
 });
