@@ -1,0 +1,5 @@
+@media screen and (max-device-width: 768px) and (orientation: portrait) {
+  #page1, #page2, #page3, #page4, #page5, #page6 {
+    min-height: 100% !important;
+  }
+}
